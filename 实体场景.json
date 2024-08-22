@@ -1,0 +1,80 @@
+/summon minecraft:villager ~ ~ ~ {
+    Invulnerable:1b,
+    NoAI:1b,
+    CustomName:'[{"text":"攻城军火供应","color":"red","italic":false}]',
+    CustomNameVisible:1b,
+    VillagerData:{
+        type:"",
+        profession:"minecraft:nitwit",
+        level:99
+    },
+    Offers:{
+        Recipes:[{
+            maxUses:1000000,
+            rewardExp:0b,
+            buy:{
+                count:9b,
+                id:"iron_ingot"
+            },
+            buyB:{
+                count:1b,
+                id:"gold_ingot"
+            },
+            sell:{
+                count:1b,
+                id:"crossbow",
+                components:{
+                    custom_name:'[{"text":"奥斯曼火枪","italic":false}]',
+                    enchantments:{
+                        levels:{
+                            'minecraft:unbreaking':3,
+                            'minecraft:piercing':1,
+                            'minecraft:quick_charge':1
+                        },
+                        show_in_tooltip:true
+                    }
+                }
+            }
+        }]
+    }
+}
+
+/summon minecraft:villager ~ ~ ~ {
+    Invulnerable:1b,
+    NoAI:1b,
+    CustomName:'[{"text":"守城军火供应","color":"blue","italic":false}]',
+    CustomNameVisible:1b,
+    VillagerData:{
+        type:"",
+        profession:"minecraft:nitwit",
+        level:99
+    },
+    Offers:{
+        Recipes:[{
+            maxUses:1000000,
+            rewardExp:0b,
+            buy:{
+                count:16b,
+                id:"iron_ingot"
+            },
+            sell:{
+                count:1b,
+                id:"diamond_sword",
+                components:{
+                    custom_name:'[{"text":"欧洲十字长剑","italic":false}]',
+                    enchantments:{
+                        levels:{
+                            'minecraft:unbreaking':3,
+                            'minecraft:sharpness':1
+                        },
+                        show_in_tooltip:true
+                    }
+                }
+            }
+        }]
+    }
+}
+//trade
+
+/summon minecraft:wither ~ ~1 ~ {NoAI:1b,PersistenceRequired:1b,CustomName:'[{"text":"城池核心","color":"blue","italic":false}]',CustomNameVisible:1b}
+//heart
